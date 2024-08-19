@@ -31,3 +31,28 @@ cd vision_transformer
 pip install -r requirements.txt
 ```
 
+## Usage
+
+Run the main script to start the training process and evaluate the model performance:
+
+```bash
+python main.py
+```
+## Configuration
+
+Adjust the model and training settings by editing the configs/config.json file:
+
+```bash
+{
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "num_epochs": 10,
+    "patch_size": 16,
+    "num_heads": 8,
+    "embed_dim": 512,
+    "dropout_rate": 0.1,
+    "dataset_path": "path/to/dataset",
+    "validation_split": 0.1,
+    "num_workers": 4
+}
+```
